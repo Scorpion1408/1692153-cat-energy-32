@@ -1,5 +1,6 @@
 .social__list {
   display: flex;
+  flex-wrap: wrap;
   width: 132px;
   padding-right: 94px;
   padding-left: 94px;
@@ -7,6 +8,18 @@
   gap: 24px;
 }
 
+@media (min-width: $tablet-width) {
+  .social__list {
+    padding: 0;
+    margin-right: 125px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    margin-right: 381px;
+  }
+}
 
 .social__link--vkontakte::before {
   content: "";

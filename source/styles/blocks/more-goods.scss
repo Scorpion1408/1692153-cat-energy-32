@@ -1,15 +1,75 @@
+.more-goods {
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .more-goods {
+    border: 2px solid #d3d3d3;
+    padding: 50px, 20px, 40px;
+    // margin-left: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .more-goods {
+    border: 2px solid #d3d3d3;
+    padding: 50px, 20px, 40px;
+    // margin-left: 60px;
+    // width: 245px;
+  }
+}
+
 .more-goods::before {
   content: "";
   display: block;
   position: absolute;
+  // left: 14px;
   width: 30px;
   height: 30px;
-  padding-left: 250px;
+  left: 160px;
   background-image: url("../../icons/stack.svg#plus");
 }
 
+@media (min-width: $tablet-width) {
+  .more-goods::before {
+    width: 60px;
+    height: 60px;
+    top: 50px;
+    left: 132px;
+  }
+}
+
+
 .more-goods__other-goods {
+  text-align: center;
   padding-top: 50px;
+  // padding-left: 58px;
+  margin-bottom: 8px;
+}
+
+@media (min-width: $tablet-width) {
+  .more-goods__other-goods {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 160px;
+    margin-bottom: 23px;
+  }
+}
+
+
+.more-goods__description {
+  text-align: center;
+  // padding-left: 50px;
+  margin-bottom: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .more-goods__description {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 82px;
+  }
 }
 
 .more-goods__button {
@@ -20,6 +80,8 @@
   text-transform: uppercase;
   width: 280px;
   padding: 10px 44px;
+  margin-bottom: 25px;
+  margin-left: 20px;
   color: $primary-text-color;
   background-color: $basic-background;
   border: none;
@@ -30,3 +92,11 @@
     background-color: #ebebeb;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .more-goods__button {
+    width: 250px;
+    margin-left: 37px;
+  }
+}
+
