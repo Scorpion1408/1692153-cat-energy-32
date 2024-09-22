@@ -3,7 +3,7 @@
 }
 
 .nutrition__list {
-  padding-bottom: 49px;
+  padding-bottom: 55px;
   padding-left: 20px;
 }
 
@@ -13,7 +13,7 @@
     grid-template-columns: 230px 246px;
     grid-template-rows: 280px 280px;
     gap: 37px 153px;
-    padding-bottom: 92px;
+    padding-bottom: 46px;
     padding-left: 30px;
   }
 }
@@ -22,15 +22,24 @@
   .nutrition__list {
     grid-template-columns: 230px 246px 248px 250px;
     grid-template-rows: 280px;
-    gap: 0 94px;
-    // padding-bottom: 20px;
+    gap: 0 83px;
     padding-left: 110px;
   }
 }
 
 .nutrition__item {
   position: relative;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nutrition__item:nth-child(2) {
+    margin-left: 10px;
+  }
 }
 
 .nutrition__title {
@@ -38,6 +47,7 @@
   font-size: 36px;
   line-height: 40px;
   color: $title-color;
+  margin: 0;
   margin-bottom: 40px;
   padding-left: 20px;
 }
@@ -58,18 +68,19 @@
 }
 
 .nutrition__description {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 18px;
   margin: 0;
   color: $primary-text-color;
+  padding-right: 20px;
   padding-left: 80px;
 }
 
 @media (min-width: $tablet-width) {
   .nutrition__description {
-    padding-top: 151px;
-    padding-left: 0;
-    padding-bottom: 57px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 151 0 57px;
   }
 }
 
@@ -97,7 +108,7 @@
     position: absolute;
     display: block;
     top: 0;
-    left: 92px;
+    left: 118px;
     width: 112px;
     height: 280px;
     font-family: $secondary-font;
@@ -107,7 +118,6 @@
     z-index: -1;
   }
 }
-
 
 .nutrition__item--pounder::before {
   content: "";
@@ -127,13 +137,19 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .nutrition__item--tableware {
+    left: 10px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .nutrition__item--pounder::after {
     content: "2";
     position: absolute;
     display: block;
     top: 0;
-    left: 80px;
+    left: 113px;
     width: 134px;
     height: 280px;
     font-family: $secondary-font;
@@ -168,7 +184,7 @@
     position: absolute;
     display: block;
     top: 0;
-    left: 102px;
+    left: 114px;
     width: 136px;
     height: 280px;
     font-family: $secondary-font;
@@ -203,7 +219,7 @@
     position: absolute;
     display: block;
     top: 0;
-    left: 85px;
+    left: 115px;
     width: 136px;
     height: 280px;
     font-family: $secondary-font;
@@ -214,3 +230,16 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .nutrition__hr {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .nutrition__hr {
+    display: block;
+    margin: 0;
+    border-color: $hr-color;
+  }
+}

@@ -2,6 +2,28 @@
   background-color: $basic-background;
 }
 
+.address {
+  position: relative;
+}
+
+@media (min-width: $desktop-width) {
+  .address__wrapper {
+    position: absolute;
+    width: 565px;
+    top: 136px;
+    left: 108px;
+    background-color: $light-text-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .address__wrapper--catalog {
+    top: 92px;
+    left: 108px;
+    background-color: $light-text-color;
+  }
+}
+
 .address__wrapper {
   display: flex;
 }
@@ -19,15 +41,34 @@
   margin-bottom: 26px;
 }
 
+.address__invitation--catalog {
+  padding-top: 30px;
+}
+
 @media (min-width: $tablet-width) {
   .address__invitation {
+    font-family: $secondary-font;
     font-size: 20px;
     line-height: 26px;
-    padding-top: 60px;
+    padding-top: 123px;
     padding-left: 70px;
     padding-bottom: 60px;
     margin-bottom: 0;
     margin-right: 250px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .address__invitation--catalog {
+    padding-top: 62px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .address__invitation {
+    padding-top: 64px;
+    padding-left: 80px;
+    margin-right: 40px;
   }
 }
 
@@ -38,12 +79,31 @@
   color: $primary-text-color;
 }
 
+.address__description--catalog {
+  padding-top: 30px;
+}
+
 @media (min-width: $tablet-width) {
   .address__description {
     text-align: right;
     font-size: 16px;
-    padding-top: 60px;
+    line-height: 20px;
+    padding-top: 123px;
     padding-right: 70px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .address__description--catalog {
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .address__description {
+    padding-top: 64px;
+    text-align: left;
+    // padding-right: 78px;
   }
 }
 

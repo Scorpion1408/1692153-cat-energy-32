@@ -24,21 +24,21 @@
         </picture>
         <img class="logo__text" src="images/content-vector/text-logo.svg" width="101" height="21" alt="Логотип с надписью Кэт энерджи">
       </a>
-      <button class="main-header__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <nav class="main-nav main-nav--index main-nav--closed">
+      <nav class="main-nav main-nav--index main-nav--opened"><!-- Чтобы открыть меню, поменяйте модификатор на opened -->
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--light main-nav__item--current">
+          <ul class="main-nav__list main-nav--index">
+            <li class="main-nav__item  main-nav__item--index main-nav__item--current">
               <hr class="main-nav__hr">
               <a href="index.html">Главная</a>
             </li>
-            <li class="main-nav__item main-nav__item--light">
+            <li class="main-nav__item main-nav__item--index">
               <hr class="main-nav__hr">
               <a href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="main-nav__item main-nav__item--light">
+            <li class="main-nav__item main-nav__item--index">
               <hr class="main-nav__hr">
               <a href="#">Подбор программы</a>
             </li>
@@ -47,7 +47,7 @@
       </nav>
     </header>
     <main class="main-container">
-      <section class="promo">
+      <section class="promo promo--opened-menu">
         <div class="promo__wrapper">
           <h1 class="promo__title">Функциональное<br class="promo_br"> питание для котов</h1>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
@@ -118,6 +118,7 @@
             </p>
           </li>
         </ul>
+        <hr class="nutrition__hr">
       </section>
       <section class="example result">
         <hr class="example__hr">
@@ -140,7 +141,7 @@
             <span class="result__text">затрачено<br class="result__br"> времени</span>
           </li>
         </ul>
-        <p class="result__cost"><b><span class="result__cost-text">Затраты на питание:</span><br class="result__br"> <span class="result__cost-price">15 000 РУБ.</span></b></p>
+        <p class="result__cost"><b><span class="result__cost-text">Затраты на питание:</span><br class="result__br-cost"> <span class="result__cost-price">15 000 РУБ.</span></b></p>
         <div class="example__slider slider">
           <div class="slider__slide slider__slide--before">
             <picture>
@@ -164,7 +165,7 @@
         <div class="address__wrapper">
           <h2 class="visually-hidden">Адрес Cat Energy</h2>
           <p class="address__invitation">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="address__description">ул. Большая Конюшенная, д. 19/8<br class="address__br"><span class="address__spb-text">Санкт-Петербург</span></address>
+          <address class="address__description">ул. Большая Конюшенная, д. 19/8 <br class="address__br"><span class="address__spb-text">Санкт-Петербург</span></address>
         </div>
         <iframe class="address__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198525!2d30.32047247784884!3d59.938719162093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1726414691036!5m2!1sen!2sru" width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </iframe>

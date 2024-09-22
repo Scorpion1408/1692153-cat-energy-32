@@ -4,11 +4,19 @@
   padding-left: 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .main-footer__copyright {
+    padding-left: 0;
+  }
+}
+
+
 .copyright__link {
   display: inline-block;
   font-size: 16px;
   line-height: 20px;
   color: inherit;
+  padding-top: 8px;
   padding-bottom: 47px;
 
   &:active {
@@ -18,7 +26,8 @@
 
 @media (min-width: $tablet-width) {
   .copyright__link {
-    margin-right: 23px;
+    padding-top: 0;
+    margin-right: 10px;
   }
 }
 
@@ -36,11 +45,19 @@
 
 @media (min-width: $tablet-width) {
   .copyright__link::before {
-    margin-right: -23px;
+    padding-top: 0;
+    top: -5px;
+    right: -20px;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
+  .copyright__link::before {
+    right: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
   .copyright__link::before {
     margin-right: -23px;
   }

@@ -3,9 +3,21 @@
   padding-top: 22px;
 }
 
+.promo--opened-menu {
+  z-index: -5;
+}
+
 @media (min-width: $tablet-width) {
   .promo {
-    padding-bottom: 50px;
+    padding-top: 0;
+    padding-bottom: 535px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    padding-top: 200px;
+    padding-bottom: 110px;
   }
 }
 
@@ -25,13 +37,14 @@
 
 .promo__image {
   position: absolute;
-  top: 220px;
-  left: 28px;
+  top: 218px;
+  left: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .promo__image {
-    top: 421px;
+    left: 30px;
+    top: 227px;
   }
 }
 
@@ -39,12 +52,11 @@
   .promo__image {
     top: 143px;
     left: 558px;
-    z-index: 2;
+    z-index: 1;
     width: 552px;
     height: 499px;
   }
 }
-
 
 @media (min-width: $tablet-width) {
   .promo__wrapper {
@@ -60,7 +72,7 @@
   height: 40px;
   padding: 10px 63px;
   margin-left: 20px;
-  margin-top: 130px;
+  margin-top: 140px;
 }
 
 @media (min-width: $tablet-width) {
@@ -68,11 +80,11 @@
     position: absolute;
     font-size: 20px;
     line-height: 26px;
-    width: 280px;
+    width: 244px;
     height: 54px;
-    top: 310px;
+    top: 117px;
+    left: 100px;
     padding: 14px 26px;
-    margin-left: 100px;
   }
 }
 
@@ -80,11 +92,10 @@
   .promo__button {
     font-size: 20px;
     line-height: 26px;
-    width: 280px;
     height: 54px;
-    margin-top: 152px;
+    margin-top: 340px;
     padding: 14px 26px;
-    margin-left: 190px;
+    left: 170px;
   }
 }
 
@@ -97,20 +108,22 @@
   color: $light-text-color;
   margin: 0;
   margin-top: 27px;
-  padding-top: 27px;
-  padding-left: 15px;
+  margin-bottom: 25px;
+  padding-top: 29px;
+  padding-left: 4px;
 
   @media (min-width: $tablet-width) {
     text-align: left;
     font-size: 60px;
     line-height: 60px;
+    margin-top: 0;
     padding-left: 120px;
     margin-bottom: 40px;
     color: $title-color;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 200px;
+    // margin-top: 200px;
     padding-left: 190px;
     color: $title-color;
   }
@@ -127,7 +140,7 @@
 @media (min-width: $tablet-width) {
   .promo__slogan {
     text-align: left;
-    padding-left: 110px;
+    padding-left: 120px;
     font-size: 20px;
     line-height: 20px;
     color: $title-color;

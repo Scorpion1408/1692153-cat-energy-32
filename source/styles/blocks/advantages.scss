@@ -1,8 +1,8 @@
-@media (min-width: $tablet-width) {
-  .advantages {
-    padding-top: 750px;
-  }
-}
+// @media (min-width: $tablet-width) {
+//   .advantages {
+
+//   }
+// }
 
 @media (min-width: $desktop-width) {
   .advantages {
@@ -60,7 +60,7 @@
 
 .advantages__hr {
   width: 240px;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 }
 
 @media (min-width: $tablet-width) {
@@ -103,6 +103,7 @@
 .advantages__description {
   color: $primary-text-color;
   padding-left: 20px;
+  padding-right: 33px;
   margin-bottom: 23px;
 }
 
@@ -112,14 +113,14 @@
     line-height: 24px;
     padding-right: 316px;
     padding-left: 52px;
-    margin-bottom: 48px;
+    margin-bottom: 52px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages__description {
     padding-right: 61px;
-	  margin-bottom: 23px;
+	  margin-bottom: 26px;
   }
 }
 
@@ -140,9 +141,9 @@
     position: absolute;
     display: block;
     top: 6px;
-    left: 85px;
+    left: 97px;
     width: 32px;
-    height: 10px;
+    height: 12px;
     background-image: url("../../icons/stack.svg#icon-arrow");
     background-repeat: no-repeat;
     margin-left: 23px;
@@ -183,7 +184,7 @@
   display: block;
   width: 50px;
   height: 50px;
-  padding-top: 21px;
+  padding-top: 43px;
   margin-left: 20px;
   background-image: url("../../icons/stack.svg#cat-slim");
   background-repeat: no-repeat;
@@ -197,6 +198,7 @@
   .advantages__item--cat-slim::before {
     width: 200px;
     height: 211px;
+    top: 40px;
     right: 63px;
     padding-top: 81px;
   }
@@ -206,7 +208,8 @@
   .advantages__item--cat-slim::before {
     width: 100px;
     height: 106px;
-    left: 52px;
+    top: 20px;
+    left: 32px;
     padding-top: 41px;
   }
 }
@@ -232,7 +235,8 @@
   .advantages__item--cat-pro::before {
     width: 268px;
     height: 200px;
-    right: 29px;
+    top: 26px;
+    right: 32px;
     padding-top: 89px;
   }
 }
@@ -241,7 +245,8 @@
   .advantages__item--cat-pro::before {
     width: 134px;
     height: 100px;
-    left: 33px;
+    top: 3px;
+    left: 23px;
     padding-top: 47px;
   }
 }
