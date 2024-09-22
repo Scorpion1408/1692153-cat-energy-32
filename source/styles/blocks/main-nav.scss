@@ -65,12 +65,10 @@
 }
 
 .main-nav--opened {
-  position: absolute;
-  background-color: #fff;
+  background-color: $light-text-color;
   width: 320px;
-  padding-bottom: 0;
-  margin-bottom: 20px;
-  // z-index: 2;
+  padding-bottom: 20px;
+  margin-bottom: -250px;
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -146,13 +144,14 @@
   }
 }
 
-.main-nav__item {
-  margin-bottom: 24px;
+.main-nav__item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .main-nav__hr {
   height: 1px;
-  margin-bottom: 17px;
+  margin: 0;
+  margin-bottom: 22px;
   background-color: #e6e6e6;
   border: none;
 }
@@ -190,7 +189,6 @@
 
   .main-nav__item--current {
     padding-bottom: 8px;
-    // margin-bottom: 750px;
     border-bottom: 2px solid $light-text-color;
   }
 }
