@@ -1,7 +1,12 @@
 .promo {
   position: relative;
   padding-top: 22px;
-  z-index: -1;
+}
+
+@media (max-width: $mobile-width-only) {
+  .promo {
+    z-index: -1;
+  }
 }
 
 // .main-nav--opened .promo--opened-menu {
@@ -31,6 +36,7 @@
   background-image: url("../../images/backgrounds/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  // z-index: -1;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../images/backgrounds/index-background-mobile@2x.jpg");
