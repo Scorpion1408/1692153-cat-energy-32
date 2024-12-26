@@ -39,7 +39,7 @@
 
 .main-footer__logo {
   padding-left: 96px;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -57,7 +57,12 @@
 
 .main-footer__hr {
   width: 280px;
-  margin: 17px;
+  margin-top: 16px;
+  margin-bottom: 18px;
+}
+
+.main-footer__hr--last {
+  margin-bottom: 17px;
 }
 
 .main-footer__logo:hover {

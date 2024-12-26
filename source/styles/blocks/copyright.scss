@@ -10,7 +10,6 @@
   }
 }
 
-
 .copyright__link {
   display: inline-block;
   font-size: 16px;
@@ -40,6 +39,7 @@
   mask-image: url("../../icons/stack.svg#html-academy-logo");
   background-repeat: no-repeat;
   background-color: $interactive-vector-background;
+  top: 1px;
   right: 1px;
 }
 

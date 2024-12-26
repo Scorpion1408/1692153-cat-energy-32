@@ -10,6 +10,8 @@
   <link rel="apple-touch-icon" href="favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preload" href="../fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -24,7 +26,7 @@
         </picture>
         <img class="logo__text" src="images/content-vector/text-logo.svg" width="101" height="21" alt="Логотип с надписью Кэт энерджи">
       </a>
-      <nav class="main-nav main-nav--index main-nav--opened"><!-- Чтобы открыть меню, поменяйте модификатор на opened, а чтобы закрыть - на closed -->
+      <nav class="main-nav main-nav--index main-nav--opened">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -53,6 +55,10 @@
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
         </div>
         <picture>
+          <source type="image/webp" width="552" height="499" media="(min-width: 1440px)" srcset="images/content-images/index-can-desktop@1x.webp 1x, images/content-images/index-can-desktop@2x.webp 2x">
+          <source type="image/webp" width="709" height="609" media="(min-width: 768px)" srcset="images/content-images/index-can-tablet@1x.webp 1x, images/content-images/index-can-tablet@2x.webp 2x">
+          <source type="image/webp" width="280" height="270" srcset="images/content-images/index-can-mobile@1x.webp 1x, images/content-images/index-can-mobile@2x.webp 2x">
+
           <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/content-images/index-can-desktop@1x.png 1x, images/content-images/index-can-desktop@2x.png 2x">
           <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/content-images/index-can-tablet@1x.png 1x, images/content-images/index-can-tablet@2x.png 2x">
           <img class="promo__image" src="images/content-images/index-can-mobile@1x.png" srcset="images/content-images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Изображение банки Кэт энерджи">
@@ -120,6 +126,7 @@
         </ul>
         <hr class="nutrition__hr">
       </section>
+
       <section class="example result">
         <hr class="example__hr">
         <div class="example__background">
@@ -142,33 +149,49 @@
           </li>
         </ul>
         <p class="result__cost"><b><span class="result__cost-text">Затраты на питание:</span><br class="result__br-cost"> <span class="result__cost-price">15 000 РУБ.</span></b></p>
+
         <div class="example__slider slider">
           <div class="slider__slide slider__slide--before">
             <picture>
+              <source type="image/webp" width="560" height="512" media="(min-width: 768px)" srcset="images/content-images/fat-cat-slider-tablet@1x.webp 1x, images/content-images/fat-cat-slider-tablet@2x.webp 2x">
+              <source type="image/webp" width="280" height="256" srcset="images/content-images/fat-cat-slider-mobile@1x.webp 1x ,images/content-images/fat-cat-slider-mobile@2x.webp 2x">
+
               <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/content-images/fat-cat-slider-tablet@1x.png 1x, images/content-images/fat-cat-slider-mobile@2x.png 2x">
               <img class="result__fat-cat" src="images/content-images/fat-cat-slider-mobile@1x.png" srcset="images/content-images/fat-cat-slider-mobile@2x.png 2x" width="280" height="256" alt="Фотография толстого кота">
             </picture>
           </div>
           <div class="slider__slide slider__slide--after">
             <picture>
+              <source type="image/webp" width="560" height="512" media="(min-width: 768px)" srcset="images/content-images/thin-cat-slider-tablet@1x.webp 1x, images/content-images/thin-cat-slider-tablet@2x.webp 2x">
+              <source type="image/webp" width="280" height="256" srcset="images/content-images/thin-cat-slider-mobile@1x.webp 1x, images/content-images/thin-cat-slider-mobile@2x.webp 2x">
+
               <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/content-images/thin-cat-slider-tablet@1x.png 1x, images/content-images/thin-cat-slider-tablet@2x.png 2x">
               <img class="compare-slider__image result__thin-cat" src="images/content-images/thin-cat-slider-mobile@1x.png" srcset="images/content-images/thin-cat-slider-mobile@2x.png 2x" width="280" height="256" alt="Фотография худого кота">
             </picture>
           </div>
-          <div class="slider__slide"></div>
-          <button class="slider__button" type="button">
-            <span class="visually-hidden">Иконка управлением слайдером</span>
-          </button>
+          <div class="slider__slide">
+            <button class="slider__button" type="button">
+              <span class="visually-hidden">Иконка управлением слайдером</span>
+            </button>
+          </div>
         </div>
       </section>
+
       <section class="address">
         <div class="address__wrapper">
           <h2 class="visually-hidden">Адрес Cat Energy</h2>
           <p class="address__invitation">Приглашаем к сотрудничеству дилеров!</p>
           <address class="address__description">ул. Большая Конюшенная, д. 19/8 <br class="address__br"><span class="address__spb-text">Санкт-Петербург</span></address>
         </div>
-        <iframe class="address__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198525!2d30.32047247784884!3d59.938719162093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1726414691036!5m2!1sen!2sru" width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-        </iframe>
+        <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="images/content-images/map-desktop@1x.webp 1x, images/content-images/map-desktop@2x.webp 2x" width="1440" height="400">
+          <source type="image/webp" media="(min-width: 768px)" srcset="images/content-images/map-tablet@1x.webp 1x, images/content-images/map-tablet@2x.webp 2x" width="768" height="400">
+          <source type="image/webp" width="320" height="362" srcset="images/content-images/map-mobile@1x.webp 1x, images/content-images/map-mobile@2x.webp 2x">
+
+          <source type="image/jpg" media="(min-width: 1440px)" srcset="images/content-images/map-desktop@1x.jpg 1x, images/content-images/map-desktop@2x.jpg 2x" width="1440" height="400">
+          <source type="image/jpg" media="(min-width: 768px)" srcset="images/content-images/map-tablet@1x.jpg 1x, images/content-images/map-tablet@2x.jpg 2x" width="768" height="400">
+          <img class="address__map" src="images/content-images/map-mobile@1x.jpg" srcset="images/content-images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        </picture>
       </section>
     </main>
     <footer class="main-footer">
