@@ -1,5 +1,7 @@
-.good-card {
-  width: 320px;
+@media (max-width: $mobile-width-only) {
+  .good-card {
+    width: 320px;
+  }
 }
 
 .good-card__title {
@@ -68,6 +70,11 @@
     line-height: 20px;
     padding-top: 7px;
     padding-right: 50px;
+  }
+
+  .good-card__discription--water {
+
+    padding-right: 59px;
   }
 }
 

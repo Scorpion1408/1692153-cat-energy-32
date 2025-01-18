@@ -20,6 +20,12 @@
   padding-bottom: 14px;
 }
 
+@media (min-width: $tablet-width) {
+  .main-nav {
+    padding-bottom: 18px;
+  }
+}
+
 .main-nav__toggle {
   position: absolute;
   top: 17px;
@@ -174,12 +180,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav__item {
-    padding-bottom: 12px;
-  }
-
   .main-nav__item--current {
-    padding-bottom: 10px;
+    padding-bottom: 6px;
     border-bottom: 2px solid $decoration-color;
   }
 }
