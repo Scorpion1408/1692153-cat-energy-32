@@ -36,6 +36,7 @@
 
 @media (min-width: $tablet-width) {
   .logo__text {
+
     padding-top: 39px;
     padding-left: 103px;
   }
@@ -43,6 +44,7 @@
 
 @media (min-width: $desktop-width) {
   .logo__text {
+    background-size: 121px 18px;
     padding-top: 74px;
     padding-left: 194px;
   }

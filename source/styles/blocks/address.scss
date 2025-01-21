@@ -8,6 +8,7 @@
 
 .address__wrapper {
   display: flex;
+
 }
 
 @media (min-width: $desktop-width) {
@@ -44,7 +45,8 @@
 }
 
 .address__invitation--catalog {
-  padding-top: 28px;
+  margin-right: 7px;
+  margin-bottom: 26px;
 }
 
 @media (min-width: $tablet-width) {
@@ -83,6 +85,7 @@
 
 .address__description--catalog {
   padding-top: 28px;
+  // margin-left: 114px;
 }
 
 @media (min-width: $tablet-width) {

@@ -39,7 +39,8 @@
 
 @media (min-width: $desktop-width) {
   .gallery__main-title {
-    padding-top: 38px;
+    padding-top: 40px;
+    padding-bottom: 0;
     padding-left: 110px;
     margin-bottom: 84px;
   }
@@ -83,9 +84,18 @@
 
 @media (min-width: $desktop-width) {
   .gallery__image {
-    margin-top: 2px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+  }
+
+  .gallery__image--chicken500 {
     padding-left: 152px;
-    padding-bottom: 27px;
+  }
+
+  .gallery__image--buckwheat500 {
+    padding-left: 152px;
   }
 }
 
@@ -98,7 +108,7 @@
 
 @media (min-width: $desktop-width) {
   .gallery__image--500 {
-    padding-top: 40px;
+    // padding-top: 40px;
   }
 }
 
@@ -119,10 +129,11 @@
 
 @media (min-width: $desktop-width) {
   .gallery__image--big {
-    margin-left: 100px;
-    padding-bottom: 15px;
-    padding-left: 46px;
-    padding-top: 16px;
+    margin-left: 19px;
+    padding-top: 7px;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+    padding-left: 65px;
   }
 }
 
@@ -139,6 +150,15 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .gallery__image--fish500 {
+    padding-top: 29px;
+    padding-left: 0;
+    margin-bottom: 22px;
+    margin-left: 105px;
+  }
+}
+
 @media (max-width: $mobile-width-only) {
   .gallery__image--fish1000 {
     padding-top: 25px;
@@ -151,6 +171,14 @@
   .gallery__image--fish1000 {
     margin-top: 7px;
     margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__image--fish1000 {
+    margin-top: 10px;
+    margin-bottom: 11px;
+    margin-left: 53px;
   }
 }
 
@@ -181,10 +209,13 @@
 }
 
 @media (min-width: $desktop-width) {
-  .gallery__image--big-buckwheat {
-    padding-top: 30px;
-    padding-left: 46px;
-    margin-bottom: 0;
+  .gallery__image--buckwheat500 {
+    padding-top: 29px;
+    margin-bottom: 22px;
+  }
+
+  .gallery__image--buckwheat1000 {
+    padding-top: 7px;
   }
 }
 
@@ -198,6 +229,14 @@
     padding-top: 24px;
     padding-bottom: 32px;
     padding-left: 111px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__image--rice500 {
+    padding-top: 27px;
+    padding-bottom: 5px;
+    padding-left: 105px;
   }
 }
 
@@ -221,7 +260,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .gallery__wrapper {
+  .gallery__wrapper--first {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 148px;
@@ -278,7 +317,6 @@
 @media (max-width: $mobile-width-only) {
   .gallery__title--buckwheat1000 {
     margin-top: -8px;
-    //margin-top: -4px;
   }
 }
 
@@ -311,23 +349,45 @@
   .gallery__title--rice {
     padding-left: 58px;
   }
-  // .gallery__title--chicken1000 {
-  //   padding-left: 61px;
-  //   margin-bottom: 12px;
-  // }
 }
 
 @media (min-width: $desktop-width) {
   .gallery__title {
-    padding-left: 15px;
     padding-right: 14px;
-    margin-bottom: 26px;
+    padding-left: 19px;
+    margin-bottom: 20px;
   }
-}
 
-@media (min-width: $desktop-width) {
   .gallery__title--1000 {
     margin-bottom: 20px;
+    padding-right: 11px;
+    padding-left: 0;
+    margin-left: 36px;
+  }
+
+  .gallery__title--fish500 {
+    padding-left: 55px;
+  }
+
+  .gallery__title--fish1000 {
+    margin-bottom: 20px;
+    padding-right: 11px;
+    margin-left: 52px;
+  }
+
+  .gallery__title--buckwheat500 {
+    padding-left: 100px;
+    margin-bottom: 18px;
+  }
+
+  .gallery__title--buckwheat1000 {
+    padding-left: 35px;
+    margin-bottom: 18px;
+  }
+
+  .gallery__title--rice {
+    padding-left: 52px;
+    margin-bottom: 18px;
   }
 }
 
@@ -367,6 +427,11 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .gallery__card {
+    margin-top: 0;
+  }
+}
 //////////////////////////////////////description!!!
 
 .gallery__description {
@@ -396,13 +461,39 @@
 
 @media (min-width: $desktop-width) {
   .gallery__description {
-    margin-right: 84px;
+    margin-top: 6px;
+    margin-right: 81px;
+    margin-bottom: 5px;
+  }
+
+  .gallery__description--fish500 {
+    margin-right: 86px;
+  }
+
+  .gallery__description--buckwheat500 {
+    margin-right: 86px;
+  }
+
+  .gallery__description--rice {
+    margin-right: 85px;
+  }
+
+  .gallery__description--price {
+    margin-bottom: 8px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .gallery__description--1000 {
     margin-right: 62px;
+  }
+
+  .gallery__description--fish1000 {
+    margin-right: 74px;
+  }
+
+  .gallery__description--buckwheat1000 {
+    margin-right: 77px;
   }
 }
 
@@ -424,6 +515,11 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .gallery__value {
+    margin-top: 6px;
+  }
+}
 
 // @media (min-width: $tablet-width) {
 //   .gallery__item:not(:last-child) {
@@ -446,37 +542,42 @@
 @media (min-width: $desktop-width) {
   .gallery__assortment-list {
     margin-top: 0;
-    margin-bottom: 18px;
+    margin-bottom: 33px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .gallery__assortment-list--1000 {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-left: 18px;
+    margin-bottom: 32px;
+  }
+
+  .gallery__assortment-list--buckwheat1000 {
+    margin-bottom: 32px;
   }
 }
 
-// @media (min-width: $tablet-width) {
-//   .gallery__assortment-list {
-//     margin-bottom: 14px;
-//   }
-// }
+@media (min-width: $desktop-width) {
+  .gallery__assortment-list--fish500 {
+    margin-bottom: 32px;
+    margin-left: 33px;
+  }
 
+  .gallery__assortment-list--buckwheat500 {
+    margin-bottom: 32px;
+    padding-left: 80px;
+  }
 
-// @media (min-width: $desktop-width) {
-//   .gallery__assortment-list {
-//     margin-top: 0;
-//     margin-bottom: 18px;
-//   }
-// }
+  .gallery__assortment-list--fish1000 {
+    margin-left: 52px;
+  }
 
-// @media (min-width: $desktop-width) {
-//   .gallery__assortment-list--1000 {
-//     margin-top: 0;
-//     margin-bottom: 20px;
-//   }
-// }
+  .gallery__assortment-list--rice {
+    margin-left: 35px;
+    margin-bottom: 31px;
+  }
+}
 
 //////////////////////////////////////////////////button
 
@@ -503,7 +604,27 @@
   .gallery__button {
     width: 169px;
     margin-top: 0;
+    margin-left: 102px;
+  }
+
+  .gallery__button--chicken500 {
     margin-left: 148px;
+  }
+
+  .gallery__button--1000 {
+    margin-left: 85px;
+  }
+
+  .gallery__button--fish1000 {
+    margin-left: 119px;
+  }
+
+  .gallery__button--buckwheat500 {
+    margin-left: 148px;
+  }
+
+  .gallery__button--buckwheat1000 {
+    margin-left: 85px;
   }
 }
 
@@ -542,5 +663,11 @@
 @media (max-width: $mobile-width-only) {
   .gallery__br {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__item:not(:first-child):not(:nth-child(5)) {
+    margin-left: 80px;
   }
 }
