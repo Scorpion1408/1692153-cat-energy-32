@@ -4,7 +4,6 @@
   }
 }
 
-
 .good-card__title {
   font-family: $secondary-font;
   font-size: 16px;
@@ -16,7 +15,6 @@
   color: $secondary-text-color;
   text-transform: uppercase;
 }
-
 
 @media (min-width: $tablet-width) {
   .good-card__title {
@@ -37,7 +35,7 @@
 .good-card__wrapper {
   display: flex;
   justify-content: space-between;
-  padding-right: 20px;
+  margin-right: 20px;
   padding-left: 20px;
   margin-bottom: 15px;
 }
@@ -70,26 +68,33 @@
     font-size: 16px;
     line-height: 20px;
     padding-top: 7px;
-    padding-right: 50px;
+    margin-right: 50px;
   }
 
   .good-card__discription--water {
-
-    padding-right: 59px;
+    margin-right: 59px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .good-card__discription {
     padding-top: 2px;
-    margin-right: 104px;
+    margin-right: 112px;
     padding-right: 0;
+  }
+
+  .good-card__discription--water {
+    margin-right: 177px;
+  }
+
+  .good-card__discription--milk {
+    margin-right: 193px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .good-card__discription--short {
-    margin-right: 177px;
+  .good-card__discription--vitamins {
+    margin-right: 120px;
   }
 }
 
@@ -111,6 +116,11 @@
 @media (min-width: $desktop-width) {
   .good-card__price {
     padding-top: 2px;
-    margin-left: 13px;
+    padding-right: 16px;
+    // margin-left: 13px;
+  }
+
+  .good-card__price--short {
+    padding-right: 25px;
   }
 }

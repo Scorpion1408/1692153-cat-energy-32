@@ -95,7 +95,7 @@
     line-height: 20px;
     padding-top: 123px;
     padding-right: 70px;
-    padding-left: 20px;
+    margin-left: 20px;
   }
 }
 
@@ -106,9 +106,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  .address__description {
-    padding-top: 64px;
+  .address__description--catalog {
+    padding-top: 63px;
     text-align: left;
+    margin-left: 56px;
     // padding-right: 78px;
   }
 }

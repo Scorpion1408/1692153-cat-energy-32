@@ -5,13 +5,14 @@
 
 .logo {
   padding-bottom: 50px;
-  z-index: 29;
+  // z-index: 29;
+  z-index: 2;
 }
 
 .logo__image {
   position: absolute;
   padding-top: 10px;
-  padding-left: 20px;
+  margin-left: 20px;
 }
 
 @media (min-width: $tablet-width) {

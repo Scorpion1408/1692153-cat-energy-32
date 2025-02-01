@@ -182,6 +182,7 @@
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  max-width: 300px;
 }
 
 @media (min-width: $tablet-width) {
@@ -191,6 +192,7 @@
     padding-right: 30px;
     text-align: right;
     margin-top: -64px;
+    margin-left: 464px;
   }
 }
 

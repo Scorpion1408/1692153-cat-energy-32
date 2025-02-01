@@ -182,7 +182,10 @@
 @media (min-width: $tablet-width) {
   .main-nav__item--current {
     padding-bottom: 6px;
-    border-bottom: 2px solid $decoration-color;
+    text-underline-offset: 8px;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    color: $decoration-color;
   }
 }
 
@@ -194,7 +197,14 @@
 
   .main-nav__item--current {
     padding-bottom: 8px;
-    border-bottom: 2px solid $light-text-color;
+    text-underline-offset: 11px;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    color: $light-text-color;
+  }
+
+  .main-nav__item--current-catalog {
+    color: $decoration-color;
   }
 }
 
@@ -219,6 +229,8 @@
     display: flex;
     flex-flow: wrap row;
     justify-content: flex-end;
+    z-index: 5;
+    min-height: 36px;
   }
 
   .main-nav__item:last-child {

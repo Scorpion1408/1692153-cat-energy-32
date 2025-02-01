@@ -22,7 +22,7 @@
 @media (min-width: $tablet-width) {
   .advantages__list {
     padding: 0;
-
+    flex-wrap: wrap;
     padding-bottom: 45px;
     gap: 30px;
   }
@@ -86,7 +86,7 @@
   .advantages__title {
     font-size: 36px;
     line-height: 36px;
-    width: 708px;
+    max-width: 370px;
     padding-top: 77px;
     padding-left: 53px;
     margin-bottom: 24px;

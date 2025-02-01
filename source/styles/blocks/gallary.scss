@@ -8,6 +8,12 @@
   }
 }
 
+// @media (min-width: $tablet-width) {
+//   .gallery__item {
+//     margin-bottom: 120px;
+//   }
+// }
+
 ////main-title
 
 .gallery__main-title {
@@ -31,9 +37,9 @@
   .gallery__main-title {
     font-size: 60px;
     line-height: 60px;
-    padding-top: 31px;
+    padding-top: 33px;
     padding-left: 30px;
-    margin-bottom: 22px;
+    margin-bottom: 48px;
   }
 }
 
@@ -76,8 +82,9 @@
 
 @media (min-width: $tablet-width) {
   .gallery__image {
-    margin-top: 22px;
-    padding-left: 112px;
+    // margin-top: 22px;
+    padding-top: 26px;
+    padding-left: 82px;
     padding-bottom: 32px;
   }
 }
@@ -146,7 +153,8 @@
 
 @media (min-width: $tablet-width) {
   .gallery__image--fish500 {
-    padding-top: 24px;
+    // padding-top: 49px;
+    // padding-top: 25px;
   }
 }
 
@@ -255,7 +263,7 @@
   .gallery__wrapper {
     margin-top: 0;
     margin-bottom: 1px;
-    padding-left: 67px;
+    padding-left: 0;
   }
 }
 
@@ -324,7 +332,7 @@
   .gallery__title {
     font-size: 20px;
     line-height: 24px;
-    padding-left: 63px;
+    padding-left: 100px;
     margin-bottom: 13px;
   }
 
@@ -521,12 +529,7 @@
   }
 }
 
-// @media (min-width: $tablet-width) {
-//   .gallery__item:not(:last-child) {
-//     background: linear-gradient(#ffffff 15%, #eaeaea 15%);
-//     margin-left: 30px;
-//   }
-// }
+
 
 //////////////////////////////////assortment-list!!!
 
@@ -536,6 +539,7 @@
     padding: 0;
     margin: 0;
     margin-bottom: 31px;
+    padding-left: 37px;
   }
 }
 
@@ -596,7 +600,8 @@
 @media (min-width: $tablet-width) {
   .gallery__button {
     width: 250px;
-    margin-left: 67px;
+    margin-left: 37px;
+    margin-bottom: 14px;
   }
 }
 
@@ -670,4 +675,20 @@
   .gallery__item:not(:first-child):not(:nth-child(5)) {
     margin-left: 80px;
   }
+}
+
+
+@media (min-width: $tablet-width) {
+  .gallery__item:not(:last-child) {
+    background: linear-gradient(#ffffff 15%, #eaeaea 15%);
+    margin-left: 30px;
+    padding-bottom: 0;
+  }
+
+  // .gallery__item::before {
+  //   content: "";
+  //   position: absolute;
+  //   background-color: red;
+  //   background-position: center;
+  // }
 }

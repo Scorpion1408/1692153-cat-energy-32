@@ -6,6 +6,9 @@
   background-color: $decoration-color;
   border: none;
   cursor: pointer;
+  height: auto;
+  max-width: 500px;
+
 
   &:hover {
     background-color: $decoration-opacity-color;
