@@ -154,7 +154,7 @@
 }
 
 .main-nav__item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .main-nav__hr {
@@ -173,6 +173,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav__item {
+    margin-right: 34px;
+  }
+}
+
+@media (min-width: $desktop-width) {
   .main-nav__item:last-child {
     margin: 0;
     padding-right: 110px;
@@ -182,7 +188,7 @@
 @media (min-width: $tablet-width) {
   .main-nav__item--current {
     padding-bottom: 6px;
-    text-underline-offset: 8px;
+    text-underline-offset: 10px;
     text-decoration-line: underline;
     text-decoration-thickness: 2px;
     color: $decoration-color;
@@ -191,8 +197,8 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__item {
-    padding-top: 71px;
-    margin-right: 31px;
+    padding-top: 73px;
+    // margin-right: 31px;
   }
 
   .main-nav__item--current {

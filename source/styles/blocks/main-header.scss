@@ -1,5 +1,5 @@
 .header__hr {
-  margin-top: 47px;
+  margin-top: 50px;
   border-color: #d9d9d9;
 }
 
@@ -18,26 +18,27 @@
 @media (min-width: $tablet-width) {
   .logo__image {
     padding-top: 25px;
-    padding-left: 30px;
+    padding-left: 11px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .logo__image {
     padding-top: 55px;
-    padding-left: 110px;
+    padding-left: 90px;
   }
 }
 
 .logo__text {
   position: absolute;
-  padding-top: 19px;
+  padding-top: 24px;
   padding-left: 109px;
 }
 
 @media (min-width: $tablet-width) {
   .logo__text {
-
+    width: 103px;
+    height: 23px;
     padding-top: 39px;
     padding-left: 103px;
   }
@@ -45,9 +46,10 @@
 
 @media (min-width: $desktop-width) {
   .logo__text {
-    background-size: 121px 18px;
-    padding-top: 74px;
-    padding-left: 194px;
+    width: 125px;
+    height: 25px;
+    padding-top: 72px;
+    padding-left: 190px;
   }
 }
 

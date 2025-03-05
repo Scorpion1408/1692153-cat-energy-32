@@ -8,7 +8,6 @@
 
 .address__wrapper {
   display: flex;
-
 }
 
 @media (min-width: $desktop-width) {
@@ -45,7 +44,7 @@
 }
 
 .address__invitation--catalog {
-  margin-right: 7px;
+  margin-right: 9px;
   margin-bottom: 26px;
 }
 
@@ -81,11 +80,6 @@
   font-style: normal;
   padding-top: 26px;
   color: $primary-text-color;
-}
-
-.address__description--catalog {
-  padding-top: 28px;
-  // margin-left: 114px;
 }
 
 @media (min-width: $tablet-width) {

@@ -1,27 +1,3 @@
-// .email-form__decor-hr {
-//   margin-top: 50px;
-//   border-color: #68b738;
-//   margin-left: 212px;
-//   width: 100%;
-// }
-
-// @media (min-width: $tablet-width) {
-//   .email-form__decor-hr {
-//     border-color: #68b738;
-//     // width: 365px;
-//     margin-top: 93px;
-//     margin-left: 409px;
-//   }
-// }
-
-// @media (min-width: $desktop-width) {
-//   .email-form__decor-hr {
-//     border-color: #68b738;
-//     // width: 1053px;
-//     margin-top: 113px;
-//     margin-left: 403px;
-//   }
-// }
 
 @media (min-width: $tablet-width) {
   .email-form {
@@ -161,8 +137,8 @@
 
 @media (min-width: $desktop-width) {
   .email-form__input {
-    width: 410px;
-    margin-left: 351px;
+    width: 415px;
+    margin-left: 345px;
     padding-left: 9px;
   }
 }

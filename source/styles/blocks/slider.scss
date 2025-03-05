@@ -1,149 +1,89 @@
-.slider {
+
+.compare-slider {
+  display: flex;
   position: relative;
+  justify-items: center;
   margin: 0 auto;
-  padding-bottom: 40px;
-}
 
-@media (max-width: $mobile-width-only) {
-  .slider {
-    width: 320px;
+  & picture {
+    display: contents;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .slider {
-    width: 768px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .slider {
-	  margin-left: 340px;
-    width: 1440px;
-  }
-}
-
-.slider__button {
+.compare-slider__image {
   display: block;
-  position: relative;
+  // height: 100%;
+
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.compare-slider__image--before {
+  object-position: 20px;
+  justify-self: start;
+  width: 50%;
+}
+
+.compare-slider__image--after {
+  object-position: right;
+  // margin-right: 20px;
+  justify-self: end;
+  width: 50%;
+}
+
+.compare-slider__control-button {
+  --color: #{$interactive-vector-background};
+
+  display: block;
+  height: 100%;
   width: 4px;
-  height: 256px;
-  background: $interactive-vector-background;
   padding: 0;
+  color: var(--color);
+  background-color: var(--color);
   border: none;
-  z-index: 3;
-  margin: 0 auto;
+  border-radius: 2px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: background-color 0.5s;
 
-
-  &:is(:hover, :focus-visible, :focus) {
-    background-color: $decoration-color;
-  }
-
-  &:active {
-    opacity: 0.6;
-    background: $decoration-opacity-color;
+  &::after {
+    mask-image: url("../../icons/stack.svg#controls");
+    position: absolute;
+    display: block;
+    content: "";
+    left: 50%;
+    top: 50%;
+    width: 24px;
+    height: 18px;
+    transform: translate(-50%, -50%);
+    background-color: var(--color);
+    cursor: pointer;
+    transition: background-color 0.5s;
   }
 
   &::before {
     content: "";
-    position: absolute;
     display: block;
-    border: 2px solid $interactive-vector-background;
-    border-radius: 50%;
-    background-color: $basic-background;
     width: 40px;
     height: 40px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  &:is(:hover, :focus-visible, :focus)::before {
-    border-color: $decoration-color;
-  }
-
-  &:active::before {
-    border-color: $decoration-opacity-color;
-  }
-
-  &::after {
-    content: "";
-    display: block;
+    background-color: $basic-background;
+    border: 2px solid var(--color);
+    border-radius: 100%;
     position: absolute;
-    background-color: #666666;
-    width: 24px;
-    height: 18px;
-    mask-image: url("../../icons/stack.svg#controls");
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    z-index: 3;
+    cursor: pointer;
   }
 
-  &:is(:hover, :focus-visible, :focus)::after {
-    background-color: $decoration-color;
-  }
-}
+  // &:hover,
+  // &:focus-visible {
+  //   --color: #{$icon-color-hover};
+  // }
 
-@media (min-width: $tablet-width) {
-  .slider__button {
-    margin-top: 123px;
-    height: 512px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .slider__button {
-    margin-top: -545px;
-    margin-left: 715px;
-  }
-}
-
-.result__fat-cat {
-  position: absolute;
-  z-index: 1;
-  background-color: #eaeaea;
-  left: 20px;
-}
-
-@media (min-width: $tablet-width) {
-  .result__fat-cat {
-    background-color: $light-text-color;
-    left: 107px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .result__fat-cat {
-    background-color: #f2f2f2;
-    left: 433px;
-  }
-}
-
-.result__thin-cat {
-  position: absolute;
-  left: 20px;
-}
-
-@media (min-width: $tablet-width) {
-  .result__thin-cat {
-    left: 100px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .result__thin-cat {
-	left: 433px;
-}
-}
-
-.slider__slide--before {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.slider__slide--after {
-  position: absolute;
+  // &:active {
+  //   --color: #{$icon-color-active};
+  // }
 }

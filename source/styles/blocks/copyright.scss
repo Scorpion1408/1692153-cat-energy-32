@@ -25,7 +25,7 @@
 
 @media (min-width: $tablet-width) {
   .copyright__link {
-    padding-top: 0;
+    padding-top: 3px;
     margin-right: 10px;
   }
 }
@@ -46,14 +46,15 @@
 @media (min-width: $tablet-width) {
   .copyright__link::before {
     padding-top: 0;
-    top: -5px;
+    top: -4px;
     right: -20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .copyright__link::before {
-    right: 20px;
+    top: -6px;
+    right: 22px;
   }
 }
 

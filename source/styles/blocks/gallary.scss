@@ -37,7 +37,7 @@
   .gallery__main-title {
     font-size: 60px;
     line-height: 60px;
-    padding-top: 33px;
+    padding-top: 34px;
     padding-left: 30px;
     margin-bottom: 48px;
   }
@@ -45,10 +45,10 @@
 
 @media (min-width: $desktop-width) {
   .gallery__main-title {
-    padding-top: 40px;
+    padding-top: 42px;
     padding-bottom: 0;
     padding-left: 110px;
-    margin-bottom: 84px;
+    margin-bottom: 82px;
   }
 }
 
@@ -74,7 +74,7 @@
 ///////////////////////////////////////////image!!!
 
 .gallery__image {
-  padding-top: 30px;
+  padding-top: 32px;
   padding-bottom: 27px;
   padding-left: 56px;
   margin-right: 36px;
@@ -85,7 +85,8 @@
     // margin-top: 22px;
     padding-top: 26px;
     padding-left: 82px;
-    padding-bottom: 32px;
+    padding-bottom: 0;
+    margin-bottom: 32px;
   }
 }
 
@@ -93,29 +94,10 @@
   .gallery__image {
     margin-top: 0;
     margin-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
+    padding-top: 29px;
+    padding-left: 41px;
     padding-bottom: 0;
-  }
-
-  .gallery__image--chicken500 {
-    padding-left: 152px;
-  }
-
-  .gallery__image--buckwheat500 {
-    padding-left: 152px;
-  }
-}
-
-
-@media (min-width: $tablet-width) {
-  .gallery__image--500 {
-    padding-top: 22px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .gallery__image--500 {
-    // padding-top: 40px;
   }
 }
 
@@ -127,20 +109,22 @@
 
 @media (min-width: $tablet-width) {
   .gallery__image--big {
-    margin-top: 11px;
+    margin-top: 10px;
     margin-left: 60px;
+    margin-bottom: 20px;
     padding-bottom: 0;
-    margin-bottom: 17px;
+    padding-top: 0;
+    padding-left: 18px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .gallery__image--big {
-    margin-left: 19px;
-    padding-top: 7px;
+    margin-left: 0;
+    margin-bottom: 13px;
+    padding-top: 9px;
     padding-bottom: 0;
-    margin-bottom: 10px;
-    padding-left: 65px;
+    padding-left: 36px;
   }
 }
 
@@ -153,7 +137,9 @@
 
 @media (min-width: $tablet-width) {
   .gallery__image--fish500 {
-    // padding-top: 49px;
+    padding-top: 29px;
+    padding-bottom: 0;
+    margin-bottom: 32px;
     // padding-top: 25px;
   }
 }
@@ -161,9 +147,9 @@
 @media (min-width: $desktop-width) {
   .gallery__image--fish500 {
     padding-top: 29px;
-    padding-left: 0;
+    // padding-left: 0;
     margin-bottom: 22px;
-    margin-left: 105px;
+    // margin-left: 105px;
   }
 }
 
@@ -177,16 +163,17 @@
 
 @media (min-width: $tablet-width) {
   .gallery__image--fish1000 {
-    margin-top: 7px;
-    margin-bottom: 20px;
+    padding-bottom: 0;
+    margin-top: 14px;
+    margin-bottom: 19px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .gallery__image--fish1000 {
     margin-top: 10px;
-    margin-bottom: 11px;
-    margin-left: 53px;
+    margin-bottom: 10px;
+    // margin-left: 53px;
   }
 }
 
@@ -198,56 +185,56 @@
 
 @media (min-width: $tablet-width) {
   .gallery__image--buckwheat500 {
-    padding-top: 24px;
+    padding-top: 27px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__image--buckwheat500 {
+    padding-top: 27px;
+    margin-bottom: 22px;
   }
 }
 
 @media (max-width: $mobile-width-only) {
   .gallery__image--buckwheat1000 {
-    padding-top: 25px;
-    padding-bottom: 27px;
+    padding-top: 23px;
     padding-left: 48px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .gallery__image--buckwheat1000 {
-    padding-top: 23px;
+    padding-top: 5px;
+    margin-bottom: 17px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .gallery__image--buckwheat500 {
-    padding-top: 29px;
-    margin-bottom: 22px;
-  }
-
   .gallery__image--buckwheat1000 {
-    padding-top: 7px;
+    margin-top: 15px;
+    padding-top: 0;
+    // padding-left: 54px;
+    margin-bottom: 11px;
   }
-}
-
-.gallery__image--rice500 {
-  padding-top: 32px;
-  padding-bottom: 26px;
 }
 
 @media (min-width: $tablet-width) {
   .gallery__image--rice500 {
-    padding-top: 24px;
-    padding-bottom: 32px;
-    padding-left: 111px;
+    padding-top: 27px;
+    padding-bottom: 0;
+    margin-bottom: 33px;
+    padding-left: 80px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .gallery__image--rice500 {
-    padding-top: 27px;
-    padding-bottom: 5px;
-    padding-left: 105px;
+    // padding-top: 12px;
+    padding-left: 42px;
+    margin-bottom: 22px;
   }
 }
-
 
 //wrapper!!!
 
@@ -271,7 +258,7 @@
   .gallery__wrapper--first {
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 148px;
+    // padding-left: 148px;
   }
 }
 
@@ -324,7 +311,7 @@
 
 @media (max-width: $mobile-width-only) {
   .gallery__title--buckwheat1000 {
-    margin-top: -8px;
+    margin-top: -5px;
   }
 }
 
@@ -337,65 +324,63 @@
   }
 
   .gallery__title--1000 {
-    padding-left: 60px;
+    padding-left: 98px;
     margin-bottom: 12px;
+    padding-top: 0;
   }
 
 
   .gallery__title--fish1000 {
-    padding-left: 61px;
+    padding-left: 98px;
   }
 
   .gallery__title--buckwheat500 {
-    padding-left: 58px;
+    padding-left: 95px;
   }
 
   .gallery__title--buckwheat1000 {
-    padding-left: 58px;
+    padding-left: 94px;
   }
 
   .gallery__title--rice {
-    padding-left: 58px;
+    padding-left: 95px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .gallery__title {
     padding-right: 14px;
-    padding-left: 19px;
+    padding-left: 56px;
+    margin-bottom: 18px;
+  }
+
+  .gallery__title--chicken500 {
     margin-bottom: 20px;
   }
 
   .gallery__title--1000 {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     padding-right: 11px;
     padding-left: 0;
-    margin-left: 36px;
+    margin-left: 56px;
   }
 
   .gallery__title--fish500 {
-    padding-left: 55px;
+    padding-left: 57px;
   }
 
   .gallery__title--fish1000 {
-    margin-bottom: 20px;
     padding-right: 11px;
-    margin-left: 52px;
-  }
-
-  .gallery__title--buckwheat500 {
-    padding-left: 100px;
-    margin-bottom: 18px;
+    margin-left: 3px;
+    // padding-left: 15px;
   }
 
   .gallery__title--buckwheat1000 {
-    padding-left: 35px;
-    margin-bottom: 18px;
+    padding-left: 55px;
   }
 
   .gallery__title--rice {
-    padding-left: 52px;
-    margin-bottom: 18px;
+    padding-left: 54px;
   }
 }
 
@@ -456,14 +441,14 @@
   .gallery__description {
     font-size: 16px;
     line-height: 20px;
-    margin-right: 165px;
+    margin-right: 164px;
     margin-bottom: 5px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .gallery__description--1000 {
-    margin-right: 155px;
+    margin-right: 157px;
   }
 }
 
@@ -471,8 +456,9 @@
   .gallery__description {
     margin-top: 6px;
     margin-right: 81px;
-    margin-bottom: 5px;
+    // margin-bottom: 5px;
   }
+
 
   .gallery__description--fish500 {
     margin-right: 86px;
@@ -494,6 +480,10 @@
 @media (min-width: $desktop-width) {
   .gallery__description--1000 {
     margin-right: 62px;
+  }
+
+  .gallery__description--price {
+    margin-right: 65px;
   }
 
   .gallery__description--fish1000 {
@@ -529,8 +519,6 @@
   }
 }
 
-
-
 //////////////////////////////////assortment-list!!!
 
 
@@ -546,7 +534,7 @@
 @media (min-width: $desktop-width) {
   .gallery__assortment-list {
     margin-top: 0;
-    margin-bottom: 33px;
+    margin-bottom: 32px;
   }
 }
 
@@ -554,34 +542,17 @@
   .gallery__assortment-list--1000 {
     margin-top: 0;
     margin-left: 18px;
-    margin-bottom: 32px;
+    padding-left: 20px;
+    margin-bottom: 31px;
   }
 
   .gallery__assortment-list--buckwheat1000 {
     margin-bottom: 32px;
+    margin-left: 0;
+    padding-left: 37px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .gallery__assortment-list--fish500 {
-    margin-bottom: 32px;
-    margin-left: 33px;
-  }
-
-  .gallery__assortment-list--buckwheat500 {
-    margin-bottom: 32px;
-    padding-left: 80px;
-  }
-
-  .gallery__assortment-list--fish1000 {
-    margin-left: 52px;
-  }
-
-  .gallery__assortment-list--rice {
-    margin-left: 35px;
-    margin-bottom: 31px;
-  }
-}
 
 //////////////////////////////////////////////////button
 
@@ -601,7 +572,7 @@
   .gallery__button {
     width: 250px;
     margin-left: 37px;
-    margin-bottom: 14px;
+    margin-bottom: 40px;
   }
 }
 
@@ -609,34 +580,13 @@
   .gallery__button {
     width: 169px;
     margin-top: 0;
-    margin-left: 102px;
-  }
-
-  .gallery__button--chicken500 {
-    margin-left: 148px;
-  }
-
-  .gallery__button--1000 {
-    margin-left: 85px;
-  }
-
-  .gallery__button--fish1000 {
-    margin-left: 119px;
-  }
-
-  .gallery__button--buckwheat500 {
-    margin-left: 148px;
-  }
-
-  .gallery__button--buckwheat1000 {
-    margin-left: 85px;
+    margin-left: 38px;
   }
 }
 
 ///////////////////////////////////////////////////////hr
 .gallery__hr {
   margin: 0;
-  // margin-bottom: px;
   border-color: $hr-color;
 }
 
@@ -671,12 +621,6 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .gallery__item:not(:first-child):not(:nth-child(5)) {
-    margin-left: 80px;
-  }
-}
-
 
 @media (min-width: $tablet-width) {
   .gallery__item:not(:last-child) {
@@ -685,10 +629,49 @@
     padding-bottom: 0;
   }
 
-  // .gallery__item::before {
-  //   content: "";
-  //   position: absolute;
-  //   background-color: red;
-  //   background-position: center;
-  // }
+  .gallery__item {
+    margin-top: 1px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__item {
+    margin-top: 0;
+  }
+
+  .gallery__item:not(:last-child) {
+    margin-left: 110px;
+    padding-bottom: 0;
+    width: 245px;
+    height: 511px;
+  }
+
+  .gallery__item:nth-child(2) {
+    margin-top: 2px;
+    margin-left: 127px;
+  }
+
+  .gallery__item:nth-child(3) {
+    margin-top: 2px;
+    margin-left: 144px;
+  }
+
+  .gallery__item:nth-child(4) {
+    margin-top: 2px;
+    margin-left: 162px;
+  }
+
+  .gallery__item:nth-child(5) {
+    margin-top: -15px;
+  }
+
+  .gallery__item:nth-child(6) {
+    margin-top: -15px;
+    margin-left: 127px;
+  }
+
+  .gallery__item:nth-child(7) {
+    margin-top: -14px;
+    margin-left: 144px;
+  }
 }
