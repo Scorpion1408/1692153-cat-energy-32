@@ -126,8 +126,9 @@
   line-height: 16px;
   color: $title-color;
   text-transform: uppercase;
-  padding-bottom: 18px;
-  padding-left: 20px;
+  margin-bottom: 18px;
+  margin-left: 20px;
+  padding-right: 30px;
   width: 83px;
   height: 16px;
 
@@ -136,12 +137,12 @@
     position: absolute;
     display: block;
     top: 6px;
-    left: 97px;
+    left: 99px;
     width: 32px;
     height: 12px;
     background-image: url("../../icons/stack.svg#icon-arrow");
     background-repeat: no-repeat;
-    margin-left: 23px;
+    // margin-left: 23px;
     transition: transform 0.3s linear;
     transform-origin: left center;
   }
@@ -159,8 +160,9 @@
   .advantages__link {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 52px;
-    padding-bottom: 57px;
+    margin-left: 52px;
+    margin-bottom: 57px;
+
     width: 108px;
     height: 30px;
   }
@@ -169,7 +171,8 @@
 @media (min-width: $tablet-width) {
   .advantages__link::after {
     top: 10px;
-    margin-left: 90px;
+    left: 135px;
+    // margin-left: 90px;
   }
 }
 

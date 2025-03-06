@@ -5,42 +5,44 @@
 
 .logo {
   padding-bottom: 50px;
-  // z-index: 29;
   z-index: 2;
 }
 
 .logo__image {
   position: absolute;
-  padding-top: 10px;
+  margin-top: 10px;
   margin-left: 20px;
+  padding-right: 35px;
+  z-index: 2;
 }
 
 @media (min-width: $tablet-width) {
   .logo__image {
-    padding-top: 25px;
-    padding-left: 11px;
+    margin-top: 25px;
+    margin-left: 29px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .logo__image {
-    padding-top: 55px;
-    padding-left: 90px;
+    margin-top: 55px;
+    margin-left: 90px;
   }
 }
 
 .logo__text {
   position: absolute;
-  padding-top: 24px;
-  padding-left: 109px;
+  margin-top: 24px;
+  margin-left: 109px;
+  z-index: 2;
 }
 
 @media (min-width: $tablet-width) {
   .logo__text {
     width: 103px;
     height: 23px;
-    padding-top: 39px;
-    padding-left: 103px;
+    margin-top: 39px;
+    margin-left: 103px;
   }
 }
 
@@ -48,8 +50,8 @@
   .logo__text {
     width: 125px;
     height: 25px;
-    padding-top: 72px;
-    padding-left: 190px;
+    margin-top: 72px;
+    margin-left: 190px;
   }
 }
 

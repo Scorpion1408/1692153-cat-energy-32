@@ -1,3 +1,7 @@
+.main-nav__wrapper {
+  padding-left: 295px;
+}
+
 .main-nav__list a {
   font-family: $secondary-font;
   font-size: 20px;
@@ -235,8 +239,7 @@
     display: flex;
     flex-flow: wrap row;
     justify-content: flex-end;
-    z-index: 5;
-    min-height: 36px;
+    // max-height: 36px;
   }
 
   .main-nav__item:last-child {
